@@ -1,0 +1,294 @@
+.loginItem{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(145, 145, 145, 0.5);
+    width:auto;
+    height: auto;
+    padding: 25px 25px 25px 25px;
+    border-radius: 50px;
+    min-height: 300px;
+}
+
+.bg{
+  margin: 0px 20px 0px 20px;
+  height: 100px;
+  top: 0;
+  background: #919191;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  border-radius: 20px;
+}
+
+
+.logo{
+  margin: 0px 0px 0px 0px;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+}
+
+#nav_link{
+  padding-left: 10px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.navLink{
+  text-decoration: none;
+
+}
+
+#nav_link p{
+  color: white;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 30px;
+  
+}
+
+#nav_link h1{
+  color: white;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  
+}
+
+#nav_link p img{
+  width: 20px;
+  height: 20px;
+  padding: 0 100 0 100;
+  visibility: hidden;
+}
+
+#nav_link p:hover img{
+  visibility: visible;
+}
+
+#nav_link p:hover{
+  color: black;
+  
+}
+
+
+
+#profile{
+  right: 20px;
+  padding-top:20px;
+  padding-left: 10px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  position: absolute;
+}
+
+#profile img{
+  width: 50px;
+  height: 50px;
+  padding: 0 100 0 100;
+  border-radius: 50px;
+}
+
+#profile p{
+  padding-right: 10px;
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+#profile p:hover{
+  color: black;
+}
+
+.title{
+    font-size: 30px;
+    text-align: left;
+    margin: 10px 0px 10px 20px;
+    color: black;
+}
+
+.headin{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    color: black;
+}
+
+#line{
+    width: auto;
+    height: 5px;
+    background-color: black;
+    margin: 0px 5px 0px 5px;
+}
+
+.part{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 20px 20px 0px 50px;
+    justify-content: center;
+    
+}
+
+.input{
+    border-width: 5px;
+    border-color: blueviolet;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 100px;
+    padding: 5px 10px 5px 10px;
+    min-width: 100px;
+    width: 300px;
+    font-size: 15px;
+    background-color: #f1f2f4;
+    height: 40px;
+}
+
+.submitBtn{
+    border-radius: 100px;
+    border-width: 5px;
+    border-color: green;
+    background-color: #f1f2f4;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+.sText{
+    font-size: 30px;
+    margin: 5px 0px 0px 0px;
+    color: black;
+}
+
+.sText a{
+    text-decoration: none;
+    color: blue;
+
+}
+
+/*For the signup page*/
+.spart{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 10px 50px 0px 50px;
+}
+
+#submitSignup{
+    border-radius: 100px;
+    border-width: 5px;
+    border-color: red;
+    background-color: #f1f2f4;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+.navTxt{
+    font-size: 30px;
+    text-align: left;
+    margin: 0px 20px 0px 20px;
+    color: black;
+}
+
+
+CSS
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-image: url("https://i.pinimg.com/originals/87/21/98/872198c2f62aa608f6d657b61c5e65b6.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+  color: black;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons a {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.buttons a.login {
+  background-color: #007bff;  /* Blue */
+}
+
+.logged-out, .logged-in {
+  padding: 50px;
+}
+
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+  .header h1 {
+      margin: 0;
+  }
+
+  .header nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+  }
+
+  .header nav a:hover {
+      text-decoration: underline;
+  }
+
+  .content {
+      padding: 20px;
+  }
+
+  

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+ 
+        nav {
+            width: 100%;
+            height: 50px;
+            background-color: #f8f9fa;
+        }
+ 
+        main {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+ 
+        h1 {
+            text-align: center;
+        }
+ 
+        .payment-planning,
+        .payment-confirmation {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+ 
+        .payment-planning h2,
+        .payment-confirmation h2 {
+            margin-top: 0;
+        }
+ 
+        .payment-planning p,
+        .payment-confirmation p {
+            font-size: 14px;
+            color: #666666;
+        }
+ 
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+ 
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+ 
+        input[type="text"] {
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+ 
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+ 
+        button:hover {
+            background-color: #0056b3;
+        }
+ 
+        .payment-details {
+            margin-bottom: 20px;
+        }
+ 
+        .payment-details p {
+            margin: 5px 0;
+        }
+ 
+        .payment-form {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <main>
+        <h1>Payment Confirmation</h1>
+        <section class="payment-confirmation">
+            <h2>Confirm Your Payment</h2>
+            <p>Please review the payment details below and enter your payment information.</p>
+            <div class="payment-details">
+                <p><strong>Topup amount: $</strong> <input type="text"></p>
+            </div>
+            <form id="payment-form" action="success.html" method="GET">
+                <div class="payment-form">
+                    <!-- Credit Card Number -->
+                    <label for="card-number">Credit Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9123 4567" required>
+                    <br>
+           
+                    <!-- Valid Date -->
+                    <label for="expiry-date">Valid Date (MM/YY):</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                    <br>
+           
+                    <!-- CVV -->
+                    <label for="cvv">3-Digit Signature (CVV):</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                </div>
+                <button type="submit">Confirm Payment</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
